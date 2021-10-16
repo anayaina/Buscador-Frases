@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <!-- BOOTSTRAP 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+
+    <body>
+        <!-- Barra Negra -->
+        <nav class="navbar navbar-dark bg-dark">
+            <h1 class="display-5">PROYECTO DESARROLLO IV</h1>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="login">Login</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Cuadro grande -->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="display-1">BIENVENIDO {{ username }}</h1>
+                <img src="https://cdn2.scratch.mit.edu/get_image/gallery/29008722_170x100.png" class="rounded mx-auto d-block" alt="...">
+                <h1 class="display-6"></h1>
+            </div>
+            <!-- cuadro pequeño -->
+            <br>
+            <div class="card text-center">
+                <div class="card-header">
+                    <br>
+                    <h3> 🪐 EXPLORE THE GALAXY 🪐 </h3>
+                </div>
+                <div class="card-body">
+                    <img src="https://cnet3.cbsistatic.com/img/vugc6cb0HLhGtYjW2N4k5ZB_tCc=/fit-in/970x0/2017/05/26/1c524ea3-5c37-4d8f-b5b8-5a135180e449/star-wars-fx-mpc-returnjedi-ships.gif" class="rounded mx-auto d-block" alt="...">
+                </div>
+
+                {%if username %}
+                <p>Busque su <a href="/tabla">Frase</a> aquí!</p>
+                <p>Si desea hacer logout, haga click <a href="/logout">Aquí!</a></p>
+                {%endif %}
+
+                <div class="card-footer text-muted">
+                    Copyright &copy;
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
+
+<!--
+            {% if username %}
+            <li><a href="buscar_frases"><span>Buscar frases</span></a></li>
+            <li><a href="favoritas"><span>Mis frases favoritas</span></a></li>
+            <li><a href="logout"><span>Cerrar sesión</span></a></li>
+            {% else %}
+            <li><a href="login"><span>Iniciar sesión</span></a></li>
+            <li><a href="registro"><span>Registrarse</span></a></li>
+            <li><a href="buscar_frases"><span>Buscar frases</span></a></li>
+            {% endif %}
+            </ul>
+        </div>
+        -->

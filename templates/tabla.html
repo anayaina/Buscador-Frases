@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FRASES</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Barra Negra -->
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 class="display-5">PROYECTO DESARROLLO IV</h1>
+        <ul class="nav justify-content-end">
+        </ul>
+        <li class="nav-item">
+            <a class="nav-link" href="/">HOME</a>
+        </li>
+    </nav>
+
+    <!-- Cuadro grande -->
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4"> ✨ BUSCAR FRASE ✨ </h1>
+        </div>
+    </div>
+
+    <div class="container" style="width:900px;">
+        <div align="center">
+            <input type="text" name="search" id="search" placeholder="🔍 Buscar Frase..." class="form-control" />
+        </div>
+        <br>
+        <!-- TABLA -->
+        <div class="table-responsive">
+            <table class="principal table table-hover table-sm" id="frasesbuscar">
+                <tr>
+                    <th width="5%">SELECT</th>
+                    <th width="70%">FRASE</th>
+                    <th width="20%">PELICULA</th>
+                    <th width="5%">AÑO</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El pasado puede doler, pero, tal como yo lo veo, puedes o huir de él o aprender</td>
+                    <td>El rey león</td>
+                    <td>1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Hakuna Matata</td>
+                    <td>El rey león</td>
+                    <td>1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Todos estamos conectados en el gran ciclo de la vida</td>
+                    <td>El rey león</td>
+                    <td>1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Has olvidado lo que eres y por lo tanto te has olvidado de mí. Mira dentro de ti Simba</td>
+                    <td>El rey león</td>
+                    <td>1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Mamá siempre decía: la vida es como una caja de bombones, nunca sabes lo que te va a tocar</td>
+                    <td>Forrest Gump</td>
+                    <td>1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Corre Forrest, Corre!</td>
+                    <td>Forrest Gump</td>
+                    <td>1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Quien primero golpea, si golpea con bastante fuerza, quizás no tenga que golpear de nuevo</td>
+                    <td>El Señor de los Anillos</td>
+                    <td>2001</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Un Anillo para gobernarlos a todos. Un Anillo para encontrarlos, un Anillo para atraerlos a todos y atarlos en las tinieblas</td>
+                    <td>El Señor de los Anillos</td>
+                    <td>2001</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Salva a la animadora, salva el mundo!</td>
+                    <td>Heroes</td>
+                    <td>2006</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Todos esos momentos se perderán en el tiempo, como lágrimas en la lluvia</td>
+                    <td>Blade Runner</td>
+                    <td>1982</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Nuestro lema es: más humanos que los humanos</td>
+                    <td>Blade Runner</td>
+                    <td> 1982</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Ser o no ser, esa es la cuestión</td>
+                    <td>Hamlet, príncipe de Dinamarca</td>
+                    <td> 1948</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Hacer o no hacer. No sirve intentar, solo hacer</td>
+                    <td>El Imperio contraataca</td>
+                    <td> 1980</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Hace mucho tiempo, en una galaxia muy, muy lejana...</td>
+                    <td>La Guerra de las Galaxias</td>
+                    <td> 1977</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Que la Fuerza esté contigo</td>
+                    <td>La Guerra de las Galaxias</td>
+                    <td> 1977</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Mantén cerca a tus amigos, pero aún más cerca a tus enemigos</td>
+                    <td>El Padrino II</td>
+                    <td> 1974</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Los finales felices son historias sin acabar</td>
+                    <td>El Sr. y la Sra. Smith</td>
+                    <td> 2005</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La vida es un regalo y no pienso desperdiciarla. Nunca se sabe qué cartas repartirá la próxima vez</td>
+                    <td>Titanic</td>
+                    <td> 1997</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Soy el rey del mundo!</td>
+                    <td>Titanic</td>
+                    <td>1997</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La muerte nos sonríe a todos, devolvámosle la sonrisa</td>
+                    <td>Gladiador</td>
+                    <td>2000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>He cruzado océanos de tiempo para encontrarte</td>
+                    <td>Drácula</td>
+                    <td> 1992</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Haz lo mejor que puedas con lo que Dios te ha dado</td>
+                    <td>Forrest Gump</td>
+                    <td>1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>A veces el mundo no necesita un héroe; a veces lo que necesita, es un monstruo</td>
+                    <td>Drácula</td>
+                    <td> 1992</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Los dioses nos envidian porque cada instante nuestro podría ser el último</td>
+                    <td>Troya</td>
+                    <td> 2004</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No existen preguntas sin respuesta, solo preguntas mal formuladas</td>
+                    <td>Matrix</td>
+                    <td>1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No intentes doblar la cuchara, eso es imposible. Solo trata de darte cuenta de la verdad … no hay cuchara.</td>
+                    <td>Matrix</td>
+                    <td>1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Todos los hombre mueren, pero no todos realmente viven</td>
+                    <td>Corazón Valiente</td>
+                    <td>1995</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Le voy a hacer una oferta que no podrá rechazar</td>
+                    <td>El Padrino</td>
+                    <td> 1972</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Me estás hablando a mi?</td>
+                    <td>Taxi Driver</td>
+                    <td> 1976</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Amar significa no tener que decir nunca lo siento</td>
+                    <td>Historia de amor</td>
+                    <td> 1970</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Elemental, querido Watson</td>
+                    <td>Las aventuras de Sherlock Holmes</td>
+                    <td> 1939</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Hasta la vista, baby</td>
+                    <td>Terminator II</td>
+                    <td> 1991</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Vamos a necesitar un barco más grande</td>
+                    <td>Tiburón</td>
+                    <td> 1975</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Está vivo. Está vivo</td>
+                    <td>Frankenstein</td>
+                    <td> 1931</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Houston, tenemos un problema</td>
+                    <td>Apollo 13</td>
+                    <td> 1995</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>sigueme si quieres vivir</td>
+                    <td>Terminator</td>
+                    <td> 1984</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>no es un hombre...es una maquina</td>
+                    <td>Terminator</td>
+                    <td> 1984</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El mejor amigo de un chico es su madre</td>
+                    <td>Psicosis</td>
+                    <td> 1960</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Por favor, Hal, abre las puertas</td>
+                    <td>2001: Odisea Espacial</td>
+                    <td> 1968</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Quién salva una vida, salva al mundo entero</td>
+                    <td>La lista de Schindler</td>
+                    <td> 1993</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No se puede confiar en alguien que no tiene nada que perder</td>
+                    <td>Infiltrados</td>
+                    <td> 2006</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Cierra los ojos e imagina que es un mal sueño</td>
+                    <td>Los piratas del caribe</td>
+                    <td> 2003</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El pueblo no debería temer al gobierno, el gobierno debería temer al pueblo</td>
+                    <td>V de vendetta</td>
+                    <td> 2005</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Somos quienes elegimos ser</td>
+                    <td>Spiderman</td>
+                    <td> 2002</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Dicen que cuando conoces al amor de tu vida, el tiempo se para</td>
+                    <td>El gran pez</td>
+                    <td> 2003</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Quiero decirte con mi último aliento que siempre te he amado</td>
+                    <td>El tigre y el dragón</td>
+                    <td> 2000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Los sueños se convierten en realidad si los deseamos suficiente</td>
+                    <td>Peter Pan</td>
+                    <td> 2003</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Dicen que si sueñas una cosa más de una vez, seguro que se hará realidad</td>
+                    <td>La bella durmiente</td>
+                    <td> 1959</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Solo puede quedar uno!</td>
+                    <td>Los inmortales</td>
+                    <td> 1986</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Alguna vez has bailado con el Diablo a la luz de la Luna?</td>
+                    <td>Batman</td>
+                    <td> 1989</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿De verdad tengo pinta de tener un plan? ¿Sabes que soy? Soy un perro que corre detrás de los coches. No sabría qué hacer si alcanzara uno</td>
+                    <td>El Caballero Obscuro</td>
+                    <td> 2008</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Algunos hombres sólo quieren ver el mundo arder</td>
+                    <td>El Caballero Obscuro</td>
+                    <td> 2008</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Anda, alégrame el día</td>
+                    <td>Harry el Sucio</td>
+                    <td> 1971</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El miedo lleva a la ira, la ira al odio, y el odio hacia el lado oscuro</td>
+                    <td>El Imperio contraataca</td>
+                    <td> 1980</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Espartanos, preparad el desayuno, y alimentaos bien, ¡porque esta noche cenaremos en el infierno!</td>
+                    <td>300</td>
+                    <td> 2006</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Hay una gran diferencia entre conocer el camino y andar el camino</td>
+                    <td>Matrix</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No conoces el poder del lado oscuro</td>
+                    <td>El Imperio contraataca</td>
+                    <td> 1980</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Siempre se llega a alguna parte si se camina lo bastante</td>
+                    <td>Alicia en el país de las maravillas</td>
+                    <td> 2010</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Si conocieras el tiempo tan bien como yo, no hablarías de perderlo</td>
+                    <td>Alicia en el país de las maravillas</td>
+                    <td> 2010</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No tiene utilidad volver a ayer, porque entonces era una persona distinta</td>
+                    <td>Alicia en el país de las maravillas</td>
+                    <td> 2010</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Un gran poder conlleva una gran responsabilidad</td>
+                    <td>Spiderman</td>
+                    <td> 2002</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Un hombre sin miedo es un hombre sin esperanzas</td>
+                    <td>Daredevil</td>
+                    <td> 2003</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Únicamente cuando se pierde todo somos libres para actuar</td>
+                    <td>El club de la pelea</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Volveré</td>
+                    <td>Terminator</td>
+                    <td> 1984</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El futuro no está establecido. No hay destino. Solo existe el que nosotros hacemos</td>
+                    <td>Terminator II</td>
+                    <td> 1991</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El tiempo siempre es escaso para quienes lo necesitan, pero para los que aman dura para siempre</td>
+                    <td>Drácula</td>
+                    <td> 2014</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Me llamo Bond, James Bond</td>
+                    <td>Agente 007 contra el Dr. No</td>
+                    <td> 1962</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Siempre nos quedará París</td>
+                    <td>Casablanca</td>
+                    <td> 1942</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Tonto es el que hace tonterías</td>
+                    <td>Forrest Gump</td>
+                    <td> 1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>yo... ¡soy tu padre!</td>
+                    <td>El Imperio contraataca</td>
+                    <td> 1980</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Carretera? A donde vamos, no necesitaremos carreteras</td>
+                    <td>Volver al futuro</td>
+                    <td> 1985</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Salven el reloj de la torre!</td>
+                    <td>Volver al futuro</td>
+                    <td> 1985</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No me conocen y se atreven a juzgarme. Por eso estoy mejor solo</td>
+                    <td>Shrek</td>
+                    <td> 2001</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La vida va demasiado rápido. Si no te paras y miras a tu alrededor de vez en cuando, puedes perdértela</td>
+                    <td>Todo en un día</td>
+                    <td> 1986</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Los ogros son como las cebollas... las cebollas tienen capas</td>
+                    <td>Shrek</td>
+                    <td> 2001</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Un enemigo que conoce el futuro no puede perder</td>
+                    <td>Al filo del mañana</td>
+                    <td> 2014</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Qué harías si estuvieses anclado en un lugar y todos los días fueran iguales sin importar lo que hicieras?</td>
+                    <td>El día de la marmota</td>
+                    <td> 1993</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Y ahora qué hacemos? No lo sé, nunca hemos llegado tan lejos</td>
+                    <td>Al filo del mañana</td>
+                    <td> 2014</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Yo sólo puedo mostrarte la puerta, tú eres quien la tiene que atravesar</td>
+                    <td>Matrix</td>
+                    <td>1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No es un problema grave si no lo conviertes en un problema grave</td>
+                    <td>Del crepúsculo al amanecer</td>
+                    <td>1996</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La probabilidad de que una persona tenga razón aumenta en relación directa con la insistencia en convencerla de su error</td>
+                    <td>El cielo puede esperar</td>
+                    <td>1978</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La muerte nos sonríe a todos, devolvámosle la sonrisa</td>
+                    <td>Gladiador</td>
+                    <td> 2000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Todos nos volvemos locos alguna vez</td>
+                    <td>Psicosis</td>
+                    <td> 1960</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Francamente, querida, me importa un comino</td>
+                    <td> Lo que el viento se llevó</td>
+                    <td> 1939</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Voy a hacerle una oferta que no podrá rechazar</td>
+                    <td> El Padrino</td>
+                    <td> 1972</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡No lo entiendes! Podría haber tenido clase. Podría haber sido un contendiente. Podría haber sido alguien, en lugar de un vagabundo, que es lo que soy</td>
+                    <td> On the Waterfront</td>
+                    <td> 1954</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Toto, tengo la sensación de que ya no estamos en Kansas</td>
+                    <td> El mago de Oz</td>
+                    <td> 1939</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Adelante, alegra mi día</td>
+                    <td> Impacto repentino</td>
+                    <td> 1983</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Me hablas a mí?</td>
+                    <td> Taxi Driver</td>
+                    <td> 1976</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Lo que tenemos aquí es una falla en la comunicación</td>
+                    <td> Cool Hand Luke</td>
+                    <td> 1967</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Me encanta el olor del napalm por las mañanas</td>
+                    <td> Apocalypse Now</td>
+                    <td> 1979</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Amar significa no tener que pedir perdón</td>
+                    <td> Love Story</td>
+                    <td> 1970</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La materia de la que están hechos los sueños</td>
+                    <td> El halcón maltés</td>
+                    <td> 1941</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Teléfono de E.T. a casa</td>
+                    <td> E.T. El extraterrestre</td>
+                    <td> 1982</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Lo logré, mamá! ¡Cima del mundo!</td>
+                    <td> White Heat</td>
+                    <td> 1949</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Estoy tan enojado como el infierno, ¡y no voy a soportar esto más!</td>
+                    <td> Network</td>
+                    <td> 1976</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Louis, creo que este es el comienzo de una hermosa amistad</td>
+                    <td> Casablanca</td>
+                    <td> 1942</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Un censista intentó una vez hacerme la prueba. Me comí su hígado con algunas habas y un buen Chianti</td>
+                    <td> El silencio de los corderos</td>
+                    <td> 1991</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Bond. James Bond.</td>
+                    <td> Dr. No</td>
+                    <td> 1962</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No hay lugar como el hogar</td>
+                    <td> El mago de Oz</td>
+                    <td> 1939</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Soy grande! Son las imágenes las que se hicieron pequeñas</td>
+                    <td> Sunset Blvd.</td>
+                    <td> 1950</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Muéstrame el dinero!</td>
+                    <td> Jerry Maguire</td>
+                    <td> 1996</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Por qué no vienes alguna vez a verme?</td>
+                    <td> Ella lo hizo mal</td>
+                    <td> 1933.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Estoy caminando aquí! ¡Estoy caminando aquí!</td>
+                    <td> Midnight Cowboy</td>
+                    <td> 1969</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡No puedes soportar la verdad!</td>
+                    <td> Algunos hombres buenos</td>
+                    <td> 1992</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Quiero estar solo</td>
+                    <td> Grand Hotel</td>
+                    <td> 1932</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Después de todo, ¡mañana es otro día!</td>
+                    <td> Lo que el viento se llevó</td>
+                    <td> 1939</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Reúna a los sospechosos habituales</td>
+                    <td> Casablanca</td>
+                    <td> 1942</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Tendré lo que ella tiene</td>
+                    <td> Cuando Harry conoció a Sally</td>
+                    <td> 1989</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Sabes silbar, ¿verdad, Steve? Simplemente junta los labios y sopla</td>
+                    <td> Tener y no tener</td>
+                    <td> 1944</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Vas a necesitar un barco más grande</td>
+                    <td> Tiburón</td>
+                    <td> 1975</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Insignias? ¡No tenemos insignias! ¡No necesitamos insignias! ¡No tengo que mostrarles ninguna insignia apestosa!</td>
+                    <td> El tesoro de la Sierra Madre</td>
+                    <td> 1948</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Si lo construyes, él vendrá</td>
+                    <td> Field of Dreams</td>
+                    <td> 1989</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Mamá siempre dijo que la vida era como una caja de bombones. Nunca se sabe lo que se va a conseguir</td>
+                    <td> Forrest Gump</td>
+                    <td> 1994</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Robamos bancos</td>
+                    <td> Bonnie y Clyde</td>
+                    <td> 1967</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Plásticos</td>
+                    <td> The Graduate</td>
+                    <td> 1967</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Veo gente muerta</td>
+                    <td> El sexto sentido</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Stella! ¡Oye, Stella!</td>
+                    <td> Un tranvía llamado Deseo</td>
+                    <td> 1951</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Shane. Shane. ¡Vuelve!</td>
+                    <td> Shane</td>
+                    <td> 1953</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Bueno, nadie es perfecto</td>
+                    <td> Some Like It Hot</td>
+                    <td> 1959</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Está vivo! ¡Está vivo!</td>
+                    <td> Frankenstein</td>
+                    <td> 1931</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Houston, tenemos un problema</td>
+                    <td> Apollo 13</td>
+                    <td> 1995</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Tienes que hacerte una pregunta: &#39;¿Me siento afortunado?&#39; Bueno, ¿verdad, punk? </td>
+                    <td> Harry el Sucio</td>
+                    <td> 1971</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Me tenías en &#39;hola&#39;</td>
+                    <td> Jerry Maguire</td>
+                    <td> 1996</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Una mañana le disparé a un elefante en pijama. No sé cómo se puso en pijama</td>
+                    <td> Animal Crackers</td>
+                    <td> 1930</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡No hay llanto en el béisbol!</td>
+                    <td> Una liga propia</td>
+                    <td> 1992</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El mejor amigo de un niño es su madre</td>
+                    <td> Psycho</td>
+                    <td> 1960</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La codicia, a falta de una palabra mejor, es buena</td>
+                    <td> Wall Street</td>
+                    <td> 1987</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Mantén a tus amigos cerca, pero a tus enemigos más cerca</td>
+                    <td> El Padrino Parte II</td>
+                    <td> 1974 </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Como Dios es mi testigo, nunca más volveré a tener hambre</td>
+                    <td> Lo que el viento se llevó</td>
+                    <td> 1939</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Bueno, aquí tienes otro lío agradable en el que me has metido!</td>
+                    <td> Hijos del desierto</td>
+                    <td> 1933</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Dile</td>
+                    <td> Scarface</td>
+                    <td> 1983</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Qué vertedero</td>
+                    <td> Beyond the Forest</td>
+                    <td> 1949</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Sra. Robinson, está tratando de seducirme. ¿No es así?</td>
+                    <td> The Graduate</td>
+                    <td> 1967</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Caballeros, no pueden pelear aquí! ¡Esta es la Sala de Guerra!</td>
+                    <td> Dr. Strangelove</td>
+                    <td> 1964</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Elemental, mi querido Watson.</td>
+                    <td> Las aventuras de Sherlock Holmes</td>
+                    <td> 1929</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Quítame las apestosas patas de encima, maldito simio sucio</td>
+                    <td> Planet of the Apes</td>
+                    <td> 1968</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>De todas las ginebras de todos los pueblos del mundo, ella entra en la mía</td>
+                    <td> Casablanca</td>
+                    <td> 1942</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Aquí está Johnny!</td>
+                    <td> The Shining</td>
+                    <td> 1980</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Están aquí!</td>
+                    <td> Poltergeist</td>
+                    <td> 1982</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿Es seguro?</td>
+                    <td> Marathon Man</td>
+                    <td> 1976</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Espera un minuto, espera un minuto. ¡Aún no has escuchado nada!</td>
+                    <td> The Jazz Singer</td>
+                    <td> 1927</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Nada de perchas de alambre, nunca!</td>
+                    <td> Mommie Querida</td>
+                    <td> 1981</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Olvídalo, Jake, es Chinatown</td>
+                    <td> Chinatown</td>
+                    <td> 1974</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Siempre he dependido de la bondad de los extraños</td>
+                    <td> A Streetcar Named Desire</td>
+                    <td> 1951</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Hasta la vista, baby.</td>
+                    <td> Terminator 2: Judgment Day</td>
+                    <td> 1991</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Soylent Green es gente!</td>
+                    <td> Soylent Green</td>
+                    <td> 1973</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Abre las puertas de la bahía de cápsulas, HAL.</td>
+                    <td> 2001: A Space Odyssey</td>
+                    <td> 1968</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Yo, Adrian!</td>
+                    <td> Rocky</td>
+                    <td> 1976</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Hola, preciosa</td>
+                    <td> Funny Girl</td>
+                    <td> 1968</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Escúchalos. Niños de la noche. Qué música hacen</td>
+                    <td> Drácula</td>
+                    <td> 1931</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Oh, no, no fueron los aviones. Fue La Bella mató a la Bestia</td>
+                    <td> King Kong</td>
+                    <td> 1933</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Mi preciosa</td>
+                    <td> El señor de los anillos: dos torres</td>
+                    <td> 2002</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Attica! Attica!</td>
+                    <td> Tarde de perros</td>
+                    <td> 1975</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Sawyer, vas a salir como un jovencito, ¡pero tienes que volver como una estrella!</td>
+                    <td> 42nd Street</td>
+                    <td> 1933</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Un martini. Agitado, no revuelto</td>
+                    <td> Goldfinger</td>
+                    <td> 1964</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡La vida es un banquete, y la mayoría de los pobres tontos se mueren de hambre!</td>
+                    <td> Auntie Mame</td>
+                    <td> 1958</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Siento la necesidad, ¡la necesidad de la velocidad!</td>
+                    <td> Top Gun</td>
+                    <td> 1986</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Carpe diem. Aprovechen el día, muchachos. Hagan sus vidas extraordinarias</td>
+                    <td> Dead Poets Society</td>
+                    <td> 1989.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Sal de ahí!</td>
+                    <td> Moonstruck</td>
+                    <td> 1987</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Nadie pone a Baby en una esquina</td>
+                    <td> Dirty Dancing</td>
+                    <td> 1987</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Te traeré a ti, mi linda, y también a tu perrito!</td>
+                    <td> El mago de Oz</td>
+                    <td> 1939</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Soy el rey del mundo!</td>
+                    <td> Titanic</td>
+                    <td> 1997</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Tengo un mal presentimiento sobre esto</td>
+                    <td> La Guerra de las Galaxias</td>
+                    <td> 1977</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Tengo un muy buen presentimiento sobre esto</td>
+                    <td>Solo, una historia de la Guerra de las Galaxias</td>
+                    <td> 2018</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Tengo un mal presentimiento sobr...</td>
+                    <td>Rogue One, una historia de la Guerra de las Galaxias</td>
+                    <td> 2016</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Nadie me dice gallina</td>
+                    <td> Volver al futuro 2</td>
+                    <td> 1989</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El tiburón todavía se ve falso</td>
+                    <td> Volver al futuro 2</td>
+                    <td> 1989</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Gran Scott!</td>
+                    <td> Volver al futuro 2</td>
+                    <td> 1989</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Eastwood. Clint Eastwood</td>
+                    <td> Volver al futuro 3</td>
+                    <td> 1990</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Significa que tu futuro no ha sido escrito, nadie lo ha hecho. Tu futuro es cualquier cosa que tu quieras hacer, así que hazlo algo bueno</td>
+                    <td> Volver al futuro 3</td>
+                    <td> 1990</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Nadie me dice amarillo</td>
+                    <td> Volver al futuro 3</td>
+                    <td> 1990</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¡Gran Scott!</td>
+                    <td> Volver al futuro 3</td>
+                    <td> 1990</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>¿ya llegamos?</td>
+                    <td> Shrek 2</td>
+                    <td> 2004</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Te lo dije antes, los ogros no viven felices para siempre</td>
+                    <td> Shrek 2</td>
+                    <td> 2004</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Bienvenidos a Parque Jurásico</td>
+                    <td> Parque Jurásico</td>
+                    <td> 1993</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La vida encontrará un caminio</td>
+                    <td> Parque Jurásico</td>
+                    <td> 1993</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La mamá está muy enojada</td>
+                    <td> Parque Jurásico 2: El mundo perdido</td>
+                    <td> 1993</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Sus científicos estaban tan preocupados por saber si podían o no, que no se detuvieron a pensar si deberían</td>
+                    <td> Parque Jurásico</td>
+                    <td> 1993</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Ustedes no pidieron algo realístico, pidieron más dientes</td>
+                    <td> Jurassic World</td>
+                    <td> 2015</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Algunas de las peores cosas imaginables se han hecho con las mejores intenciones</td>
+                    <td> Parque Jurásico 3</td>
+                    <td> 2001</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Vamos a necesitar un bote más grande</td>
+                    <td> Tiburón</td>
+                    <td> 1975</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Esta es Ripley, la última sobreviviente de la Nostromo, cerrando comunicación</td>
+                    <td> Alien</td>
+                    <td> 1979</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Yo digo que despeguemos y destruyamos todo el sitio desde la órbita ... es la única forma de estar seguros.</td>
+                    <td> Aliens</td>
+                    <td> 1986</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Gato estupido</td>
+                    <td> Aliens</td>
+                    <td> 1986</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Mi mami siempre dijo que no había monstruos de verdad... pero sí hay</td>
+                    <td> Aliens</td>
+                    <td> 1986</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Pasó un gato negro y luego pasó otro igual que él</td>
+                    <td> Matrix</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Todo lo que hace esta máquina es nadar, comer y hacer pequeños tiburones</td>
+                    <td> Tiburón</td>
+                    <td> 1975</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Esta es tu vida y se está acabando a cada minuto</td>
+                    <td> El club de la pelea</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La primer regla del club de la pelea es: No hablar sobre el club de la pelea</td>
+                    <td> El club de la pelea</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Solo cuando has perdido todo es cuando eres libre de hacer cualquier cosa</td>
+                    <td> El club de la pelea</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>No debo temer. El miedo es el asesino de la mente.</td>
+                    <td> Dune</td>
+                    <td> 1984</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>La primera regla para evitar una trampa es conocer su existencia.</td>
+                    <td> Dune</td>
+                    <td> 1984</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Sólo hay una persona que puede decidir lo que voy a hacer, y soy yo mismo</td>
+                    <td> Ciudadano Kane</td>
+                    <td> 1941</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Qué importante es poder contar en la vida con buenos amigos</td>
+                    <td> El graduado</td>
+                    <td> 1967</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Es toda una experiencia vivir con miedo, ¿verdad? Eso es lo que significa ser un esclavo</td>
+                    <td> Blade Runner</td>
+                    <td> 1982</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>El odio me llevó a la cárcel, el amor me dará la libertad</td>
+                    <td> Huracán Carter</td>
+                    <td> 1999</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Mi regla número uno es: espera lo mejor y prevé lo peor</td>
+                    <td> El ultimátum de Bourne</td>
+                    <td> 2007</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Todos morimos, lo que importa es el cómo y el cuándo</td>
+                    <td> Corazón Valiente</td>
+                    <td> 1995</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> </td>
+                    <td>Sigue nadando</td>
+                    <td> Buscando a Nemo</td>
+                    <td> 2003</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <center>
+            <input type="button" class="btn btn-secondary pasarfrase" value="Guardar Frase">
+        </center>
+        <br>
+        <center>
+            <input type="button" onclick="uncheck()" name="uncheck" class="btn btn-secondary uncheck" value="Quitar Seleccion">
+
+        </center>
+        <br>
+
+        <!-- Cuadro grande favs-->
+        <div class="jumbotron jumbotron-fluid text-center">
+            <div class="container">
+                <h1 class="display-4"> ✨ FRASES FAVS ✨ </h1>
+            </div>
+        </div>
+
+        <!-- TABLA FRASES FAVS-->
+        <table id="tablafavs" class="secundaria table table-hover table-sm" id="frasesfavs">
+            <tr>
+                <th width="5%">SELECT</th>
+                <th width="70%">FRASE</th>
+                <th width="20%">PELICULA</th>
+                <th width="5%">AÑO</th>
+            </tr>
+        </table>
+        <br>
+        <center>
+            <input type="button" class="btn btn-danger borrar" value="Borrar de Favs">
+        </center>
+        <br>
+        <center>
+            <input type="button" class="btn btn-danger guardar" value="Guardar">
+        </center>
+
+    </div>
+    <br>
+    <br>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="card-footer text-muted">
+            Copyright &copy;
+        </div>
+    </div>
+
+    <script>
+        /* BUSCA LA FRASE */
+        $(document).ready(function() {
+            $('#search').keyup(function() {
+                search_table($(this).val());
+            });
+
+            function search_table(value) {
+                $('#frasesbuscar tr').each(function() {
+                    var found = 'false';
+                    $(this).each(function() {
+                        if ($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0) {
+                            found = 'true';
+                        }
+                    });
+                    if (found == 'true') {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            }
+        });
+
+        /* QUITAR SELECCION CHECKBOX */
+        function uncheck() {
+            $('input[type="checkbox"]').prop('checked', false)
+
+        }
+
+        /* PASA LA FRASE A FAVS */
+        $(function() {
+            $(document).on('click', ".pasarfrase", function() {
+                var getvalues = $(".principal input:checked").parents("tr").clone().appendTo($(".secundaria tbody").add(getvalues));
+            })
+        })
+        $(document).ready(function() {
+            $("#buscar").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#tablebuscar tr").filter(function() {
+                    $(this).toogle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+        });
+
+        /* BORRAR LA FRASE A FAVS */
+        $(function() {
+            $(document).on("click", ".borrar", function() {
+                var deleterowfromtable = $(".secundaria input:checked").parents("tr").remove();
+            })
+        })
+
+        /* GUARDAR FRASE FAVS */
+        jQuery($ => {
+            var arr = JSON.parse(localStorage.getItem('checked')) || [];
+            arr.forEach(function(checked, i) {
+                $('.secundaria').eq(i).prop('checked', checked);
+            });
+
+            $(".secundaria").click(() => {
+                var arr = $('.secundaria').map((i, el) => el.checked).get();
+                localStorage.setItem("checked", JSON.stringify(arr));
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

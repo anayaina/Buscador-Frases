@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SIGN UP</title>
+    <!-- BOOTSTRAP 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+
+<body>
+    <!-- Barra Negra -->
+    <nav class="navbar navbar-dark bg-dark">
+        <h1 class="display-5">PROYECTO DESARROLLO IV</h1>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="/">HOME</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+    <!-- Cuadro grande -->
+    <div class="container text-center">
+        <div class="jumbotron">
+            <h1 class="display-1">SIGN UP</h1>
+            <img src="https://i.pinimg.com/originals/db/e3/88/dbe38878e8a560f2c61b87cb2f185106.gif" class="rounded mx-auto d-block" alt="...">
+
+            <div id="content">
+                <form action="" method="post">
+                    <!-- Usuario -->
+                    <label class="form-label">Usuario</label><br>
+                    <input type="text" id="username" class="form-control" name="username" placeholder="Usuario">
+                    <!-- Correo -->
+                    <label class="form-label">Correo</label><br>
+                    <input type="text" id="email" class="form-control" name="email" placeholder="Correo">
+                    <!-- Contraseña -->
+                    <label class="form-label">Contraseña</label><br>
+                    <input type="password" id="password" class="form-control" name="password" placeholder="Contraseña"><br>
+                    <!-- Boton Sign up -->
+                    <input type="submit" id="register" class="btn btn-dark" value="Sign up">
+                </form>
+            </div>
+        </div>
+        <a> Copyright &copy; </a>
+    </div>
+
+</body>
+
+</html>
