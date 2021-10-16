@@ -1,1 +1,2 @@
-# Buscador-Frases
+Para este proyecto se necesito escribir un programa en Python + Flask que encuentre una frase célebre entre varias y muestre la referencia a la misma en una página HTML. Será necesario instalar un módulo de Python, el cual se encarga de calcular la distancia entre una cadena de texto de otra. Esta librería se llama Levenshtein.
+En enste programa lo que vamos a hacer es encontrar el radio o tasa de similitud entre dos cadenas de texto, donde una distancia de 0 indica que las cadenas son totalmente diferentes tanto en símbolos (letras), como en posiciones de estas; mientras que entre más se acerque a 1 la distancia, significa que las cadenas no solo comparten las mismas letras, sino también las mismas posiciones.
